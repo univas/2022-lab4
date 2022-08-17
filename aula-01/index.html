@@ -61,5 +61,57 @@
                 </tr>
             </tbody>
         </table>
+
+
+        <form action="cadastro.html" method="post">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" 
+                    name="fieldName"
+                    placeholder="Digite seu nome!">
+            </div>
+            
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email"
+                    name="fieldEmail" 
+                    value="seunome@gmail.com">
+            </div>
+
+            <div>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" 
+                name="fieldPassword">
+            </div>
+
+            <div>
+                <input type="button" 
+                    value="Salvar">
+                <input type="reset"
+                    value="Limpar">
+                <input type="submit"
+                    value="Enviar">
+            </div>
+
+            <div>
+                <label for="mat">Matutino</label>
+                <input type="checkbox" id="mat" 
+                    name="fieldCheckBox">
+
+                <label for="not">Noturno</label>
+                <input type="checkbox" id="not" 
+                    name="fieldCheckbox">
+            </div>
+
+            <div>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" 
+                    name="fieldRadio">
+
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="feminino" 
+                    name="fieldRadio">
+            </div>
+        </form>
     </body>
 </html>
