@@ -1,0 +1,26 @@
+p {
+    color: #133df5;
+    background-color: #a3b7c1;
+    font-size: 40px;
+    font-family: Arial;
+    border-bottom-style: solid;
+    border-bottom-color: pink;
+    border-bottom-width: 8px;
+    padding-bottom: 5px;
+    margin: 25px;
+}
+
+h1 {
+    text-align: center;
+    border-style: dotted;
+    border-color: rgb(189, 241, 30);
+    border-width: 8px;
+    padding: 10px;
+    margin-left: 35px;
+}
+
+ul {
+    border: 8px rgb(189, 241, 30) dotted;
+    border-top: 8px pink solid;
+}
+
