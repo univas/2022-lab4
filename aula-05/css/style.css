@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+}
+
+#firstParagraph {
+    color: red;
+}
+
+.greenColor {
+    color: green;
+}
+
+div p {
+    color: orange;
+}
+
+div > p {
+    font-weight: bold;
+}
+
+a[id] {
+    font-size: 22px;
+}
+
+a[href="www.amazon.com.br"] {
+    color: darkgreen;
+}
+
+a[href$=".com"] {
+    color: aquamarine;
+}
+
+p:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+a:visited {
+    color: blue;
+}
+
+li:first-child {
+    font-style: italic;
+}
+
+li:last-child {
+    text-decoration: line-through;
+}
+
+li:nth-child(2) {
+    font-variant: small-caps;
+}
+
+a::after {
+    content: '>>>'
+}
+
+a::before {
+    content: '<<<'
+}
+
+p::first-letter {
+    font-size: 24px;
+}
+
+
+
