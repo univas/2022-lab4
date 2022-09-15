@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.content {
+    width: 800px;
+    height: 700px;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.bookImage {
+    width: 33%;
+    float: left;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+}
