@@ -4,12 +4,14 @@ const start = () => {
 }
 
 const createNewGuest = () => {
-    const inputGuestName = document.getElementById('guestName')
-    const newItem = createListItem(inputGuestName.value)
     const list = document.getElementById('guestList')
-    list.appendChild(newItem)
-
-    clearAndFocusInputElement(inputGuestName)
+    const inputGuestName = document.getElementById('guestName')
+    
+    if (validate(list, inputGuestName)) {
+        const newItem = createListItem(inputGuestName.value)
+        list.appendChild(newItem)
+        clearAndFocusInputElement(inputGuestName)
+    }
 }
 
 const createListItem = contentListItem => {
@@ -37,5 +39,32 @@ const deleteListItemEvent = event => {
     const list = listItem.parentNode
     list.removeChild(listItem)
 }
+
+const validate = (list, input) => {
+    return validateInput(input) && 
+        validateGuestAlreadyExist(list, input)
+}
+
+const validateInput = (input) => {
+    if (input.value.trim() === '') {
+        alert('Por favor preencha o campo corretamente')
+        return false
+    }
+    return true
+}
+
+
+const validateGuestAlreadyExist = (list, input) => {
+    for (let i = 0; i < list.children.length; i++) {
+        const item = list.children[i]
+        console.log(item.childNodes[0])
+        if (input.value == item.childNodes[0].textContent) {
+            alert('Convidado já está na lista!')
+            return false
+        }
+    }
+    return true
+}
+
 
 start()
