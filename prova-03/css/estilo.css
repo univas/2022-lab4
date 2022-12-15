@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.leftPanel {
+    width: 30%;
+    min-height: 95%;
+    border-right: 1px solid black;
+    float: left;
+    padding: 10px;
+}
+
+.rightPanel {
+    width: 67%;
+    min-height: 95%;
+    float: right;
+}
+
+#content {
+    position: relative;
+}
